@@ -1,7 +1,6 @@
 {
   "name": "express_router_lecture_angular",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "nodemon server/app.js",
@@ -26,5 +25,14 @@
     "passport": "^0.2.2",
     "passport-local": "^1.0.0",
     "path": "^0.11.14"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SF-Felling7/My_Shoe_App.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SF-Felling7/My_Shoe_App/issues"
+  },
+  "homepage": "https://github.com/SF-Felling7/My_Shoe_App#readme",
+  "description": ""
 }
