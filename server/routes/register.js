@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 
 // Handles POST request with new user data
 router.post('/', function(req, res, next) {
-    Users.create(req.body, function(err, post) {
+    User.create(req.body, function(err, post) {
          if(err) {
            // next() here would continue on and route to routes/index.js
            next(err);
