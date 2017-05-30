@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+var Shoe = require('../models/shoes_model');
 var Schema = mongoose.Schema;
 var bcrypt = require('bcrypt');
 var SALT_WORK_FACTOR = 10;
