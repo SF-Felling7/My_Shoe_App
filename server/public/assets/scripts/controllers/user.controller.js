@@ -16,24 +16,6 @@ myApp.controller('UserController', ['$http', '$location',  function($http, $loca
       }
   });
 
-  vm.addItem = function () {
-    console.log('in addItem');
-
-    var itemObj ={
-      username : vm.userName,
-      description : vm.description,
-      imgUrl : vm.imgUrl
-  };//end add item
-
-  $http({
-    method : 'POST',
-    url : '/user',
-    data : itemObj
-  }).then(function success(response){
-    console.log( 'res:', response);
-  });
-
-};
 
   vm.logout = function() {
     $http.get('/user/logout').then(function(response) {

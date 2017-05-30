@@ -20,11 +20,11 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
     })
     .when( '/addItem', {
       templateUrl: '/views/addItem.html',
-      controller: "UserController as uc"
+      controller: "addItemController as aic"
     })
     .when( '/myShoes', {
       templateUrl: '/views/myShoes.html',
-      controller: "UserController as uc"
+      controller: "myShoesController as msc"
     })
     .otherwise({
       redirectTo: 'home'

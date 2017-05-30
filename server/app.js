@@ -8,9 +8,11 @@ var passport = require('./strategies/user.strategy');
 var session = require('express-session');
 
 // Route includes
-var index = require('./routes/index');
-var user = require('./routes/user');
-var register = require('./routes/register');
+var addItem = require( './routes/addItem' );
+var index = require( './routes/index' );
+var user = require( './routes/user' );
+var register = require( './routes/register' );
+
 
 // Body parser middleware
 app.use(bodyParser.json());
@@ -33,9 +35,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Routes
-app.use('/register', register);
-app.use('/user', user);
-app.use('/*', index);
+app.use('/register', register );
+app.use('/user', user );
+app.use( '/addItem', addItem );
+app.use('/*', index );
+
 
 // Mongo Connection //
 var mongoURI = '';
