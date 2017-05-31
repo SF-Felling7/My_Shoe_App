@@ -9,7 +9,9 @@ var path = require( 'path' );
 
 router.get( '/', function( req, res ) {
   console.log( 'Hit myShoes Route' );
-  Shoe.find({}, function( err, results ) {
+  // req.body.user = req.session.passport.user;
+  console.log(req.body.user);
+  Shoe.find({userid: req.user._id }, function( err, results ) {
     if( err ){
       console.log( err );
       res.sendStatus( 500 );

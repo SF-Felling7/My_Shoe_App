@@ -8,7 +8,6 @@ console.log( 'additem controller hit ' );
     console.log('in addItem');
 
     var itemObj ={
-      username : vm.userName,
       description : vm.description,
       imgUrl : vm.imgUrl
   };//end add item

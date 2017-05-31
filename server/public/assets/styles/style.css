@@ -46,3 +46,12 @@
   text-align: right;
 
 }
+
+img {
+  width: 400px;
+  height: auto;
+}
+
+#myShoeLogout {
+  text-align: center;
+}

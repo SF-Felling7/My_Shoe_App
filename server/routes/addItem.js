@@ -16,6 +16,7 @@ router.post('/', function (req, res){
       description: req.body.description,
       imgUrl: req.body.imgUrl
   };
+  console.log( 'newShoe', newShoe );
   var itemObj = Shoe(newShoe);
   itemObj.save(function(err, response){
     if (err) {
