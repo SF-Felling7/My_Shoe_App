@@ -12,6 +12,7 @@ var addItem = require( './routes/addItem' );
 var index = require( './routes/index' );
 var user = require( './routes/user' );
 var register = require( './routes/register' );
+var shoes = require( './routes/shoes' );
 
 
 // Body parser middleware
@@ -27,7 +28,7 @@ app.use(session({
    key: 'user', // this is the name of the req.variable. 'user' is convention, but not required
    resave: 'true',
    saveUninitialized: false,
-   cookie: { maxage: 60000, secure: false }
+   cookie: { maxage: 600000, secure: false }
 }));
 
 // start up passport sessions
@@ -38,6 +39,7 @@ app.use(passport.session());
 app.use('/register', register );
 app.use('/user', user );
 app.use( '/addItem', addItem );
+app.use( '/shoes', shoes);
 app.use('/*', index );
 
 

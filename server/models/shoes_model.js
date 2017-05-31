@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 
 
 var shoeSchema = new Schema({
-    username: {type: String, required: true},
+    userid: Schema.Types.ObjectId,
     description: {type: String, required: true},
     imgUrl: {type: String, required: true},
 
