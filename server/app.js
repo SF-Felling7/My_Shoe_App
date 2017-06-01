@@ -13,6 +13,7 @@ var index = require( './routes/index' );
 var user = require( './routes/user' );
 var register = require( './routes/register' );
 var shoes = require( './routes/shoes' );
+var selectShoes = require( './routes/selectShoes' );
 
 
 // Body parser middleware
@@ -40,6 +41,7 @@ app.use('/register', register );
 app.use('/user', user );
 app.use( '/addItem', addItem );
 app.use( '/shoes', shoes);
+app.use( '/selectShoes', selectShoes );
 app.use('/*', index );
 
 

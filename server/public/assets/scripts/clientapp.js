@@ -26,6 +26,10 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
       templateUrl: '/views/myShoes.html',
       controller: "myShoesController as msc"
     })
+    .when( '/selectShoes', {
+      templateUrl: '/views/selectShoes.html',
+      controller: "selectShoesController as ssc"
+    })
     .otherwise({
       redirectTo: 'home'
     });
