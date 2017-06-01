@@ -9,8 +9,9 @@ console.log( 'additem controller hit ' );
 
     var itemObj ={
       description : vm.description,
-      imgUrl : vm.imgUrl
-  };//end add item
+      imgUrl : vm.imgUrl,
+      climate : vm.climate
+  };//end itemObj
 
   $http({
     method : 'POST',
@@ -18,9 +19,10 @@ console.log( 'additem controller hit ' );
     data : itemObj
   }).then(function success(response){
     console.log( 'res:', response);
-  });
+  }); //ending success
 
-  };
+};//ending addItem function
+
   vm.logout = function() {
     $http.get('/user/logout').then(function(response) {
       console.log('logged out');

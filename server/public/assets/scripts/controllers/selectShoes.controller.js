@@ -1,7 +1,7 @@
 myApp.controller('selectShoesController', ['$http', '$location',  function($http, $location) {
   var vm = this;
 
-  console.log( 'selectShoesController function logged' );
+  console.log( 'selectShoesController function found' );
 
   vm.findWeather = function() {
     console.log( 'Found weather function' );
@@ -14,6 +14,17 @@ myApp.controller('selectShoesController', ['$http', '$location',  function($http
       });//end off http call
   };//END FIND WEATHER FUNCTION
   vm.findWeather();
+
+  vm.connectWeather = function() {
+    console.log( 'connectWeather function found' );
+
+    $http({
+      method: 'POST',
+      url: '/connectWeather'
+    }).then(function(response) {
+
+    });
+  };
 
   vm.logout = function() {
     $http.get('/user/logout').then(function(response) {

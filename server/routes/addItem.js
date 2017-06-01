@@ -14,7 +14,8 @@ router.post('/', function (req, res){
   var newShoe = {
       userid: req.user._id,
       description: req.body.description,
-      imgUrl: req.body.imgUrl
+      imgUrl: req.body.imgUrl,
+      climate: req.body.climate
   };
   console.log( 'newShoe', newShoe );
   var itemObj = Shoe(newShoe);

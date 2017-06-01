@@ -7,7 +7,7 @@ var shoeSchema = new Schema({
     userid: Schema.Types.ObjectId,
     description: {type: String, required: true},
     imgUrl: {type: String, required: true},
-
+    climate: {type: String, required: true}
 });
 
 var Shoe = mongoose.model('Shoe', shoeSchema);
