@@ -1,8 +1,10 @@
-<div class="container" >
+<div>
   <button id=" myShoeLogout"class="btn btn-default" ng-click="msc.logout()">Log Out</button>
-  <div ng-repeat="shoes in msc.shoes">
-    <div>
+  <div ng-repeat="shoes in msc.shoes" class="col-sm-2" >
+
+
       <img ng-src="{{shoes.imgUrl}}">
-    </div>
+
+
   </div>
 </div>
