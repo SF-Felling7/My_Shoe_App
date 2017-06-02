@@ -23,6 +23,13 @@ console.log( 'additem controller hit ' );
 
 };//ending addItem function
 
+vm.getShoeforClimate = function() {
+
+  var weatherObj = {
+    climate: vm.climate
+  };
+};
+
   vm.logout = function() {
     $http.get('/user/logout').then(function(response) {
       console.log('logged out');

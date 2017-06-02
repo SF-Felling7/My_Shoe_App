@@ -63,3 +63,7 @@ img {
 #myShoeLogout {
   text-align: center;
 }
+
+.styled-select {
+  color: black;
+}

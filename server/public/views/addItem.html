@@ -1,7 +1,19 @@
 <div class="container">
   Description: <input type="text" ng-model="aic.description">
-  Climate: <input type="text" ng-model="aic.climate">
   Image URL: <input type="text" ng-model="aic.imgUrl">
+  <br>
+  <br>
+   <form class="styled-select black rounded">
+      Climate:<select ng-model="aic.climate">
+      <option value="" disabled selected><--Please Select--></option>`
+      <option value="clear sky">Clear Sky</option>
+      <option value="rain">Rain</option>
+      <option value="snow">Snow</option>
+      </select>
+    </form>
+    <br>
+    <br>
+
 
   <button class="btn btn-default" ng-click="aic.addItem(); aic.getAll()">Add Item</button>
   <button class="btn btn-default" ng-click="aic.logout()">Log Out</button>
