@@ -12,6 +12,10 @@ console.log( 'additem controller hit ' );
       imgUrl : vm.imgUrl,
       climate : vm.climate
   };//end itemObj
+  vm.description = " ";
+  vm.imgUrl = " ";
+  vm.climate = " ";
+
 
   $http({
     method : 'POST',

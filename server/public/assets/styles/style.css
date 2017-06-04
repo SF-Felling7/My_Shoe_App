@@ -1,6 +1,6 @@
 
 .instructions .container h1 {
-    font-size: 28px;
+    font-size: 44px;
     font-weight: 700;
 
 }
@@ -48,14 +48,17 @@
   text-align: right;
 
 }
-
-img {
-  position:relative;
-  width:400px;
-  height:400px;
-  padding-top:50px;
-  margin: 2em;
-
+.labelz {
+  color: white;
+}
+.img {
+    position: relative;
+    float: left;
+    width:  100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
 }
 
 #myShoeLogout {
