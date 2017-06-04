@@ -8,16 +8,17 @@ var path = require( 'path' );
 router.get( '/:weatherDescription', function( req, res ) {
 console.log( 'hit weatherDescription route', req.params );
 console.log( 'userid', req.user);
-var weather;
+var weather = "";
 
 //going through weather conditions to equal clear skies
 if (req.params.weatherDescription === 'scattered clouds' || req.params.weatherDescription === 'few clouds' || req.params.weatherDescription === 'broken clouds') {
-  weather = 'clear sky';
+    weather = 'clear sky';
 }
-if (req.params.weatherDescription === 'shower rain' || req.params.weatherDescription === 'thunderstorm' || req.params.weatherDescription === 'mist') {
-  weather = 'rain';
+else if (req.params.weatherDescription === 'shower rain' || req.params.weatherDescription === 'thunderstorm' || req.params.weatherDescription === 'mist' || req.params.weatherDescription === 'light rain') {
+   weather = 'rain';
 }
 Shoe.find({ userid: req.user._id, climate: weather }, function( err, results ) {
+  console.log('weather: ', weather);
 // console.log( 'userid: ', req.user._id, 'climate: ', req.climate._id );
   if( err ){
     console.log( err );

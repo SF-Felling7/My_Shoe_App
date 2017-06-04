@@ -1,10 +1,8 @@
-body {
-  background-color: darkgrey;
-}
 
 .instructions .container h1 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
+
 }
 
 .instructions {
@@ -66,4 +64,18 @@ img {
 
 .styled-select {
   color: black;
+}
+body{
+ background: url('http://k30.kn3.net/taringa/3/F/4/1/A/2/TheCrashWTF/B95.jpg');
+}
+.lead {
+  text-align: center;
+  color:white;
+}
+.lynx {
+  color: white;
+}
+
+.backOne {
+  color: white;
 }
