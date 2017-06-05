@@ -20,6 +20,20 @@ vm.myShoes = function() {
 
   vm.myShoes();
 
+  vm.removeShoes = function(shoesId) {
+    console.log( 'removeShoes function running' );
+    console.log('shoe id to remove is:', shoesId);
+
+    $http({
+      method:'DELETE',
+      url: '/shoes/removeShoes',
+      params: {id: shoesId}
+    }).then(function success(response) {
+      console.log( 'in success :', response );
+      vm.myShoes();
+    });
+  };
+
   vm.logout = function() {
     $http.get('/user/logout').then(function(response) {
       console.log('logged out');

@@ -22,5 +22,19 @@ router.get( '/', function( req, res ) {
 
 });
 
+router.delete( '/removeShoes', function( req, res ) {
+  console.log( 'hit removeShoes route' );
+  var shoeIdToDelete = req.query.id;
+  Shoe.remove( {_id: shoeIdToDelete }, function( err, results) {
+    if( err ){
+      console.log( err );
+      res.sendStatus( 500 );
+    }else{
+      console.log( 'successful remove shoes ->', results );
+      res.status( 200 ).send( results );
+    }
+  });
+});
+
 
 module.exports = router;

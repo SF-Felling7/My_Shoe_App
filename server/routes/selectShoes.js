@@ -8,7 +8,7 @@ var path = require( 'path' );
 router.get( '/:weatherDescription', function( req, res ) {
 console.log( 'hit weatherDescription route', req.params );
 console.log( 'userid', req.user);
-var weather = "";
+var weather = req.params.weatherDescription;
 
 //going through weather conditions to equal clear skies
 if (req.params.weatherDescription === 'scattered clouds' || req.params.weatherDescription === 'few clouds' || req.params.weatherDescription === 'broken clouds') {

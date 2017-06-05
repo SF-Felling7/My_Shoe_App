@@ -1,11 +1,14 @@
 <div>
-  <button id=" myShoeLogout"class="btn btn-default" ng-click="msc.logout()">Log Out</button>
+  <button id=" myShoeLogout"class="btn btn-danger" ng-click="msc.logout()">Log Out</button>
+  <a href="#user" class="btn btn-info" role="button">User Page</a>
 </div>
 
-<div ng-repeat="shoes in msc.shoes" class="col-sm-4" >
+<div ng-repeat="shoes in msc.shoes" class="col-sm-6" >
 
-  
+  <div>
     <img ng-src="{{shoes.imgUrl}}">
+    <button class="btn btn-warning" ng-click="msc.removeShoes(shoes._id)">DELETE</button>
+  </div>
 
 
 
