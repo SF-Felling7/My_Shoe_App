@@ -8,7 +8,10 @@
         <div uib-slide="" active="shoes.active" ng-repeat="shoes in msc.shoes" index="$index">
             <img ng-src="{{shoes.imgUrl}}" style="margin:auto;" />
 
-            <button class="btn btn-warning" ng-click="msc.removeShoes(shoes._id)">DELETE</button>
+
         </div>
+    </div>
+    <div class="deleteButton">
+    <button class="btn btn-warning" ng-click="msc.removeShoes(shoes._id)">DELETE</button>
     </div>
 </div>

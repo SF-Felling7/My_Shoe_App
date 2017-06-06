@@ -53,7 +53,8 @@
 }
 img{
   margin:auto;
-  width: 400px;
+  width: 500px;
+  height: 400px;
 
 }
 
@@ -74,4 +75,14 @@ body{
 }
 .lynx {
   color: white;
+}
+ @font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url(/assets/styles/glyphicons-halflings-regular.ttf);
+}
+
+.deleteButton {
+  padding-top: 35px;
+  text-align: center;
+
 }
