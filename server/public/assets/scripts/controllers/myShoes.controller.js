@@ -3,6 +3,7 @@ myApp.controller( 'myShoesController', [ '$http', '$location', function( $http, 
 var vm = this;
 vm.shoes = [];
 
+
 console.log( 'myShoesController connected' );
 
 vm.myShoes = function() {

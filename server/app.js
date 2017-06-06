@@ -3,6 +3,10 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var path = require('path');
+// var angular = require('angular');
+// var ngTouch = require('angular-touch');
+// var carousel  = require('angular-carousel');
+
 
 var passport = require('./strategies/user.strategy');
 var session = require('express-session');

@@ -1,11 +1,17 @@
 <div ng-init="findWeather()">
   <a href="#user" class="btn btn-info" role="button">User Page</a>
 
-  <div ng-repeat="shoe in ssc.selectedShoes" class="col-sm-6" >
+  <div style="height: 305px">
+        <div uib-carousel="" active="true" interval="5000" no-wrap="true">
+          <div uib-slide="" active="shoes.active" ng-repeat="shoes in ssc.selectedShoes" index="$index">
+            <img ng-src="{{shoes.imgUrl}}" style="margin:auto;" />
+            <div class="carousel-caption">
+              <h4> </h4>
 
-
-
-      <img ng-src="{{shoe.imgUrl}}">
+            </div>
+          </div>
+        </div>
+      </div>
 
 
   </div>

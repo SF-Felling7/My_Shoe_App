@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ngRoute']);
+var myApp = angular.module('myApp', ['ngRoute', 'ui.bootstrap', 'ngAnimate' ]);
 
 /// Routes ///
 myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
@@ -35,16 +35,3 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
     });
 
 }]);
-
-myApp.controller( 'shelfController', function(GetItem) {
-  var vm = this;
-
-  vm.shelf = [];
-  vm.getAll = function(){
-    GetItem.getItem().then(function(response){
-      vm.shelf = response;
-  });
-};
-  vm.getAll();
-
-});
