@@ -58,7 +58,7 @@ if(process.env.MONGODB_URI !== undefined) {
     mongoURI = process.env.MONGODB_URI;
 } else {
     // use the local database server
-    mongoURI = 'mongodb://localhost:27017/shoes';
+    mongoURI = 'mongodb://heroku_415xt0g7:14o68o8uka52vvoqsblf4lo1ko@ds145148.mlab.com:45148/heroku_415xt0g7';
 }
 
 // var mongoURI = "mongodb://localhost:27017/passport";

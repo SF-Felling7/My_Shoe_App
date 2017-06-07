@@ -6,6 +6,7 @@
     "test": "nodemon server/app.js",
     "start": "node server/app.js"
   },
+
   "author": "Scott Bromander, Kris Szafranski",
   "license": "ISC",
   "dependencies": {
