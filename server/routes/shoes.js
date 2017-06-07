@@ -31,7 +31,7 @@ router.delete( '/removeShoes', function( req, res ) {
       res.sendStatus( 500 );
     }else{
       console.log( 'successful remove shoes ->', results );
-      res.status( 200 ).send( results );
+      res.sendStatus( 200 );
     }
   });
 });

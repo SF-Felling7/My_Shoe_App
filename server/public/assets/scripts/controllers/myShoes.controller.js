@@ -29,7 +29,7 @@ vm.myShoes = function() {
       method:'DELETE',
       url: '/shoes/removeShoes',
       params: { id: shoesId }
-    }).then(function success( response ) {
+    }).then(function ( response ) {
       console.log( 'in success :', response );
       vm.myShoes();
     });

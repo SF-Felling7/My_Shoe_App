@@ -1,17 +1,20 @@
 <div>
     <button id=" myShoeLogout" class="btn btn-danger" ng-click="msc.logout()">Log Out</button>
-    <a href="#user" class="btn btn-info" role="button">User Page</a>
+    <a href="#user" class="btn btn-info" role="button">Home</a>
 </div>
 
 <div style="height: 305px">
-    <div uib-carousel="" active="true" interval="5000" no-wrap="true">
-        <div uib-slide="" active="shoes.active" ng-repeat="shoes in msc.shoes" index="$index">
-            <img ng-src="{{shoes.imgUrl}}" style="margin:auto;" />
+    <div uib-carousel="" active="true" interval="3000" no-wrap="false">
+        <div uib-slide="" active="shoe.active" ng-repeat="shoe in msc.shoes" index="$index">
+            <img ng-src="{{shoe.imgUrl}}" style="margin:auto;" />
+            <div class="deleteButton">
+                <button class="btn btn-warning" ng-click="msc.removeShoes(shoe._id)">DELETE</button>
+            </div>
 
 
         </div>
+
     </div>
-    <div class="deleteButton">
-    <button class="btn btn-warning" ng-click="msc.removeShoes(shoes._id)">DELETE</button>
-    </div>
+
+
 </div>

@@ -1,11 +1,19 @@
 <div class="container">
     <h1 id="welcome" class="lead">Welcome, {{uc.userName}}!</h1>
-    
 
-     <a href="#addItem" class="btn btn-warning" role="button" >ADD ITEM</a>
+
+     <!-- <a href="#addItem" class="btn btn-warning" role="button" >ADD ITEM</a>
      <a href="#myShoes" class="btn btn-warning" role="button">MY SHOES</a>
-     <a href="#selectShoes" class="btn btn-warning" role="button">SELECT SHOES</a>
-    <button id="logOut" class="btn btn-info" ng-click="uc.logout()">Log Out</button>
+     <a href="#selectShoes" class="btn btn-warning" role="button">SELECT SHOES</a> -->
+    <!-- <button  class="btn btn-info" ng-click="uc.logout()">Log Out</button> -->
+<div id="userPage">
+    <ul>
+  <li><a href="#addItem" class="round green">ADD SHOES<span class="round">Would you like to add a pair of shoes?.</span></a></li>
+  <li><a href="#myShoes" class="round red">MY SHOES<span class="round">Here are your shoes. </span></a></li>
+	<li><a href="#selectShoes" class="round yellow">SELECT SHOES<span class="round">Pick your shoes for the day!</span></a></li>
+  <li><a id="logOut" class="round yellow" ng-click="uc.logout()">LOG OUT<span class="round">End your session</span></a></li>
+    </ul>
+</div>
 
 
 </div>
