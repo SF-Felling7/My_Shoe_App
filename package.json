@@ -7,7 +7,7 @@
     "start": "node server/app.js"
   },
 
-  "author": "Scott Bromander, Kris Szafranski",
+  "author": "Sean Felling",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.4",
