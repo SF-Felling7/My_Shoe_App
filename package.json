@@ -6,7 +6,6 @@
     "test": "nodemon server/app.js",
     "start": "node server/app.js"
   },
-
   "author": "Sean Felling",
   "license": "ISC",
   "dependencies": {
@@ -30,7 +29,6 @@
     "jquery": "^2.1.4",
     "moment": "^2.18.1",
     "mongoose": "^4.4.6",
-    "nodewebkit": "^0.11.6",
     "passport": "^0.2.2",
     "passport-local": "^1.0.0",
     "path": "^0.11.14"
