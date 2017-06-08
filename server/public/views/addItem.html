@@ -15,7 +15,9 @@
     <br>
 
 
-  <button class="btn btn-success" ng-click="aic.addItem(); aic.getAll()">Add Item</button>
-  <button class="btn btn-danger" ng-click="aic.logout()">Log Out</button>
-  <a href="#user" class="btn btn-info" role="button">HOME</a>
+    <div class="specialButtons">
+    <button class="action-button shadow animate blue" ng-click="aic.addItem(); aic.getAll()">Add Item</button>
+    <a href="#user" class="action-button shadow animate green" role="button">HOME</a>
+    <button class="action-button shadow animate red" ng-click="aic.logout()">Log Out</button>
+  </div>
 </div>
