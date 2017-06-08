@@ -25,6 +25,12 @@ box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 .container p{
     margin-top : 14px;
 }
+.addItemPage {
+
+  text-align: center;
+  padding-top: 45px;
+
+}
 
 .message {
     padding: 10px 0;
@@ -54,6 +60,7 @@ box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 .labelz {
   color: white;
+
 }
 img{
   margin:auto;
@@ -194,11 +201,6 @@ sans-serif;
 		color: rgba(1,151,171,1);
 	}
 
-	a.yellow {
-		background-color: rgba(252,227,1,1);
-		color: rgba(153,38,0,1);
-		border-color: rgba(153,38,0,.2);
-	}
 
 	a.yellow:hover {
 		color: rgba(252,227,1,1);
@@ -249,4 +251,56 @@ sans-serif;
 	}
 #userPage {
   text-align: center;
+}
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 18px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.blue
+{
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+}
+
+.red
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+}
+
+
+.action-button:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+.specialButtons {
+  padding-right: 400px;
+  float: right;
 }
