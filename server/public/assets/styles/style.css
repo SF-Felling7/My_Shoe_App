@@ -206,6 +206,12 @@ sans-serif;
 		color: rgba(252,227,1,1);
 	}
 
+  a.yellow {
+		background-color: rgba(252,227,1,1);
+		color: rgba(153,38,0,1);
+		border-color: rgba(153,38,0,.2);
+	}
+
 	.round span.round {
 		display: block;
 		opacity: 0;
