@@ -310,3 +310,10 @@ sans-serif;
   padding-right: 400px;
   float: right;
 }
+.selectShoesFont {
+  font-size: 25px;
+  color: white;
+  text-shadow: black 3px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
