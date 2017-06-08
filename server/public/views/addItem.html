@@ -1,6 +1,6 @@
 <div class="addItemPage">
-  <label class="labelz">Brand/Model:</label> <input type="text" ng-model="aic.description"><br><br>
-  <label class="labelz">Image URL:</label> <input type="text" ng-model="aic.imgUrl">
+  <label class="labelz">Brand/Model:</label> <input type="text" placeholder="Add Brand" ng-model="aic.description"><br><br>
+  <label class="labelz">Image URL:</label> <input type="text" placeholder="Add Image" ng-model="aic.imgUrl">
   <br>
   <br>
    <label class="labelz">Climate:</label>
@@ -18,7 +18,7 @@
 
 <div class="specialButtons">
   <button class="action-button shadow animate blue" ng-click="aic.addItem(); aic.getAll()">Add Item</button>
-  <a href="#user" class="action-button shadow animate green" role="button">HOME</a>
+  <a href="#user" class="action-button shadow animate green" role="button"><button type="button">HOME</button></a>
   <button class="action-button shadow animate red" ng-click="aic.logout()">Log Out</button>
 </div>
 
